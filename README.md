@@ -6,4 +6,4 @@ File tree to html pages displayed with tables
 the idea behind this is making a file tree using html tables for a potential archive site. i know there's already stuff for "archive sites" but eh why not make my own.
 
 Concept Image:
-![Concept Image](file table concept .png)
+![Concept Image](file-table-concept.png)
