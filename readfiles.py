@@ -8,10 +8,10 @@ filelog = open("files.txt", "w")
 path = 'Testing Grounds'
 
 #first testing of this idea
-#filedir = os.listdir(path)
-#size = os.path.getsize('Testing Grounds/testfile_0.txt')
+filedir = os.listdir(path)
+size = os.path.getsize('Testing Grounds/testfile_0.txt')
 #print(filedir)
-#print(str(size) + 'B')
+print(str(size / 1024) + 'MB')
 
 
 #this portion referenced from https://www.geeksforgeeks.org/python-get-list-of-files-in-directory-with-size/
@@ -25,7 +25,7 @@ size_of_file = [
 ]
 #write list of files in filedir to file close write mode
 for f,s in size_of_file:
-    filelog.write("{} : {}MB \n".format(f, round(s/(1024*1024),3)))
+    filelog.write("{}:\n{}MB::\n".format(f, round(s/(1024*1024),3)))
 filelog.close()
 
 #opens file in read mode
@@ -37,6 +37,7 @@ print(line[2])
 filelog.close()
 
 #html output
-filetable = open('file2table.txt', 'w')
+filetable = open('file2table.html', 'w')
 
-filetable.write('<td>' + line[2] +'</td>')
+filetable.write('<tr> \n<td>' + line[2] + '</td> \n</tr>')
+filetable.close()
