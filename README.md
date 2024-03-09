@@ -10,3 +10,8 @@ Concept Image:
 
 Update 0.1: Read Files
 okay readfiles.py can now list files and folders in a directory along with there sizes. a good start i suppose
+
+Update 0.2: Write/Print/Convert
+okay read files now writes the list of files with their sizes to files.txt.
+it then can read your line of choice and print it to console
+currently working on it reading lines and converting to </td> in preperation for HTML
